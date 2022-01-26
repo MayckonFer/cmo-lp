@@ -1,0 +1,303 @@
+/* RESET CSS  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: max-content;
+}
+
+/* VARIAVEIS  */
+:root {
+  --primary-color: #e9f9f6;
+  --second-color: #1ABC9C;
+  --third-color: #444444;
+  --fourth-color: #FFFFFF;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.scroll {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+  background-color: #e9f9f6;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.button-default {
+  background: linear-gradient(90deg, #13D477 1.39%, #1ABC9C 100%);
+  padding: .5rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  color: var(--fourth-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+  outline: none;
+  transition: .2s;
+}
+
+.button-default:hover {
+  box-shadow: 0 0 .5em var(--second-color);
+}
+
+.button-default:focus {
+  transform: scale(0.9);
+}
+
+/* MAIN */
+#catalog-dental {
+  background-color: var(--primary-color);
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+
+.content-catalog-dental {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: var(--second-color);
+  font-size: 2.5rem;
+  padding-bottom: 1.2rem;
+  display: block;
+}
+
+.description {
+  color: var(--third-color);
+}
+
+/* INFO */
+#info {
+  background-color: var(--fourth-color);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.container-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 10rem;
+}
+
+.container-info:first-child {
+  margin-top: 0;
+}
+
+.title-default {
+  color: var(--second-color);
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.description-default {
+  color: var(--third-color);
+}
+
+/* INFO-2 */
+#second-info {
+  background: linear-gradient(90deg, #13D477 1.39%, #1ABC9C 100%);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.title-second-info {
+  color: var(--fourth-color);
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.title-info {
+  color: var(--fourth-color);
+  font-size: 2.5rem;
+}
+
+.description-info {
+  color: var(--fourth-color);
+}
+
+/* Principais Recursos */
+#key-features {
+  background-color: var(--primary-color);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.container-title {
+  text-align: center;
+}
+
+.title-key-features {
+  color: var(--third-color);
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.description-key-features {
+  color: var(--third-color);
+  font-size: 1.2rem;
+  padding-top: .5rem;
+}
+
+.content-key-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-gap: 4rem 2rem;
+  padding-top: 4rem;
+}
+
+.box-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title-features {
+  color: var(--second-color);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.description-features {
+  color: var(--third-color);
+  font-size: 1rem;
+}
+
+/* Dentais que aprovam */
+#clients {
+  background-color: var(--fourth-color);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.client-title > strong {
+  color: var(--third-color);
+  font-size: 2.3rem;
+  text-align: center;
+  display: block;
+}
+
+.client-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  margin-top: 5rem;
+}
+
+/* Catalago online */
+#online-catalog {
+  background: linear-gradient(90deg, #13D477 1.39%, #1ABC9C 100%);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.content-oline-calalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-online-catalog > strong {
+  color: var(--fourth-color);
+  font-size: 2.2rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+.button-online-catalog {
+  background: var(--fourth-color);
+  padding: 0.5rem 2rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  border: none;
+  color: var(--second-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+  outline: none;
+  display: block;
+  transition: .2s;
+}
+
+.button-online-catalog:hover {
+  box-shadow: 0 0 1em var(--fourth-color);
+}
+
+.button-online-catalog:focus {
+  transform: scale(0.9);
+}
+
+/* Cabeçalho */
+#footer {
+  background: linear-gradient(90deg, #138A72 1.39%, #1B3D36 100%);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.content-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conpyright-footer {
+  color: var(--fourth-color);
+  display: block;
+  margin-top: 1rem;
+}
+
+.box-footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.box-footer img {
+  margin-right: 1rem;
+}
+
+.text-footer > strong {
+  color: var(--fourth-color);
+  display: block;
+  font-size: 1.3rem;
+}
+
+.text-footer > small {
+  color: var(--fourth-color);
+}

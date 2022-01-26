@@ -1,0 +1,92 @@
+@media (max-width: 1200px) {
+  /* <!-- CATALAGO-INICIO --> */
+  .content-catalog-dental {
+    flex-direction: column;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .box-title-catalog {
+    margin-bottom: 6rem;
+  }
+
+  /* <!--  INFO --> */
+  .container-info {
+    flex-direction: column;
+  }
+
+  .container-info img {
+    order: 0;
+  }
+
+  .box-text-info {
+    margin-top: 2rem;
+    order: 1;
+    text-align: center;
+  }
+
+  .title-default {
+    text-align: center;
+  }
+
+  .description-default {
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  /* <!-- Principais Recusos --> */
+  .content-key-features {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  /* <!-- Dentais que aprovam --> */
+  .client-list {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  /* <!-- Principais Rescursos --> */
+  .content-key-features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* <!-- Dentais que aprovam --> */
+  .client-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* footer */
+  .content-footer {
+    flex-direction: column;
+  }
+
+  .box-footer {
+    margin-top: 2rem;
+  }
+
+  .box-copyright {
+    text-align: center;
+  }
+
+  /* <!-- Header --> */
+  .content-header > img {
+    width: 150px;
+  }
+
+
+  .button-default {
+    width: 190px;
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .content-header > img {
+    width: 100px;
+  }
+}
